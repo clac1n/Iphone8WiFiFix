@@ -11,7 +11,8 @@ media = instance.media_new(url)
 
 player.set_media(media)
 
-player.audio_toggle_mute()
+
+player.audio_set_mute(True)
 
 player.play()
 
@@ -19,5 +20,4 @@ try:
     while True:
         time.sleep(1)
 except KeyboardInterrupt:
-    
     player.stop()
